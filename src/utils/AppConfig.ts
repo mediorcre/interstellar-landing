@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
+  site_name: 'InterstellarEVM',
+  title: 'InterstellarEVM',
+  description: 'Unleash the power of the EVM on Stellar',
   locale: 'en',
 };
