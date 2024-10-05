@@ -3,6 +3,7 @@ import className from 'classnames';
 type IButtonProps = {
   xl?: boolean;
   children: string;
+  onClick?: () => void;
 };
 
 const Button = (props: IButtonProps) => {
@@ -14,13 +15,13 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <div className={btnClass}>
+    <div className={btnClass} onClick={props.onClick}>
       {props.children}
 
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-md text-center;
+            @apply inline-block rounded-md text-center cursor-pointer;
           }
 
           .btn-base {

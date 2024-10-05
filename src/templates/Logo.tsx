@@ -3,7 +3,6 @@ type ILogoProps = {
 };
 
 const Logo = (props: ILogoProps) => {
-  const size = props.xl ? '8' : '4';
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
     : 'font-semibold text-xl';
@@ -11,14 +10,15 @@ const Logo = (props: ILogoProps) => {
   return (
     <span className={`inline-flex items-center text-gray-900 ${fontStyle}`}>
       <img
-        className={`h-${size} mr-8`}
-        src="/assets/images/InterstellarLogoImage.svg"
-        alt="Interstellar"
+        style={{ height: '30px' }}
+        className="mr-4"
+        src="/assets/images/InterstellarLogoImage.png"
+        alt="Interstellar Logo Image"
       />
       <img
-        className={`h-${size}`}
-        src="/assets/images/InterstellarLogoText.svg"
-        alt="Interstellar"
+        style={{ height: '30px' }}
+        src="/assets/images/InterstellarLogoText.png"
+        alt="Interstellar Logo Text"
       />
     </span>
   );
